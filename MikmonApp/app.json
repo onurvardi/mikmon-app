@@ -63,6 +63,9 @@
         "projectId": "4df8897a-7991-4118-ac03-0be3fa5753b4"
       }
     },
-    "owner": "onurvardi"
+    "owner": "onurvardi",
+    "cli": {
+      "appVersionSource": "remote"
+    }
   }
 }

@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "MikmonApp",
+    "slug": "MikmonApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mikmon.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.mikmon.app",
+      "versionCode": 1,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "INTERNET",
+        "VIBRATE",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.WAKE_LOCK"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Mikmon uygulaması konumunuzu personel takibi için kullanır.",
+          "locationAlwaysPermission": "Mikmon uygulaması arka planda da konumunuzu personel takibi için kullanır.",
+          "locationWhenInUsePermission": "Mikmon uygulaması konumunuzu personel takibi için kullanır."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#ffffff",
+          "sounds": ["./assets/notification-sound.wav"]
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "4df8897a-7991-4118-ac03-0be3fa5753b4"
+      }
+    },
+    "owner": "onurvardi"
+  }
+}

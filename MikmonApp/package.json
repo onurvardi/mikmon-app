@@ -4,34 +4,35 @@
   "main": "index.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
     "web": "expo start --web"
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "2.1.2",
-    "@react-navigation/bottom-tabs": "^7.4.2",
-    "@react-navigation/native": "^7.1.14",
-    "@react-navigation/native-stack": "^7.3.21",
-    "canvas": "^3.1.2",
-    "expo": "~53.0.17",
-    "expo-constants": "~17.1.7",
-    "expo-device": "^7.1.4",
-    "expo-file-system": "^18.1.11",
+    "@react-native-async-storage/async-storage": "1.21.0",
+    "@react-navigation/bottom-tabs": "^6.5.11",
+    "@react-navigation/native": "^6.1.9",
+    "@react-navigation/native-stack": "^6.9.17",
+    "expo": "~53.0.0",
+    "expo-device": "~7.1.4",
+    "expo-file-system": "~18.1.11",
+    "expo-font": "~13.3.2",
     "expo-location": "~18.1.6",
-    "expo-notifications": "^0.31.4",
-    "expo-status-bar": "~2.2.3",
-    "firebase": "^12.0.0",
-    "react": "19.0.0",
-    "react-native": "0.79.5",
-    "react-native-gesture-handler": "~2.24.0",
-    "react-native-maps": "1.20.1",
-    "react-native-safe-area-context": "5.4.0",
-    "react-native-screens": "~4.11.1",
-    "react-native-webview": "^13.13.5"
+    "expo-notifications": "~0.31.4",
+    "expo-status-bar": "~2.0.0",
+    "firebase": "^10.7.1",
+    "react": "18.2.0",
+    "react-native": "0.76.3",
+    "react-native-gesture-handler": "~2.20.2",
+    "react-native-maps": "1.10.0",
+    "react-native-reanimated": "~3.12.0",
+    "react-native-safe-area-context": "4.10.5",
+    "react-native-screens": "~4.1.0",
+    "react-native-webview": "13.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
   },
-  "private": true
+  "private": true,
+  "buildTrigger": "2025-01-19"
 }

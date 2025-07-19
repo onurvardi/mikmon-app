@@ -31,7 +31,7 @@ jobs:
 
       - name: Login to Expo
         run: |
-          echo ${{ secrets.EXPO_TOKEN }} | eas login
+          echo ${{ secrets.EXPO_TOKEN }} | eas login --token
 
       - name: Build Android APK
         run: |

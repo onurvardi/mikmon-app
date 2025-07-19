@@ -21,21 +21,26 @@ jobs:
           cache: 'npm'
           cache-dependency-path: MikmonApp/package-lock.json
 
+      - name: Install dependencies
+        run: |
+          cd MikmonApp
+          npm ci
+
+      - name: Install EAS CLI
+        run: npm install -g eas-cli
+
       - name: Setup Expo CLI
         uses: expo/expo-github-action@v8
         with:
           expo-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
 
-      - name: Install dependencies
-        run: |
-          cd MikmonApp
-          npm ci
-
       - name: Build Android APK
         run: |
           cd MikmonApp
           eas build --platform android --non-interactive --local-build-artifact=apk
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
